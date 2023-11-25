@@ -59,19 +59,24 @@ const questions = [
   }
 ];
 
-// In this section I've created a function to write the README file. 
+// In this section I've created a function to write the README file. This function uses the 'fs.writeFile' medthod to write data to a file, It also logs an error to the console should there be any. 
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
       if (err) {
         console.error(err);
         return;
       }
-      console.log('${fileName} created successfully!');
+      console.log(`${fileName} created successfully!`);
     });
 }
 
-// TODO: Create a function to initialize app
-function init() {}
+// I have created a function to initialize app
+function init() {
+  inquirer.prompt(questions).then((answers) => {
+    const readmeContent = generateMarkdown(answers);
+    writeToFile('README.md', readmeContent);
+    });
+}
 
 // Function call to initialize app
 init();
