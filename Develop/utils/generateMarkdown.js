@@ -4,6 +4,15 @@ function renderLicenseBadge(license) {
   if (!license) {
     return '';
   }
+
+  //This section will map your license choices to corresponding license URLs 
+  const licenseLinkMap = {
+    MIT: 'https://opensource.org/licenses/MIT',
+    Apache: 'https://opensource.org/licenses/Apache-2.0',
+    GPL: 'https://www.gnu.orglicenses/gpl-3.0.html',
+  };
+
+  return `[License Link](${licenseLinkMap[license]})`;
 }
 
 // TODO: Create a function that returns the license link
