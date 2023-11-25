@@ -1,7 +1,7 @@
-// This section includes packages needed for this application
+// This section includes packages needed for this application (require statement).
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./Develop/utils/generateMarkdown')
+const generateMarkdown = require('./Develop/utils/generateMarkdown.js');
 
 // I have created an array of questions for user input. 
 const questions = [
