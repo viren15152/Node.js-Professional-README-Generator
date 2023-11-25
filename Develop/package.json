@@ -1,0 +1,18 @@
+{
+  "name": "node.js-professional-readme-generator",
+  "version": "1.0.0",
+  "description": "Professional-README.md-Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Node.js-Professional-README-Generator"
+  },
+  "author": "Viren Lala",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
