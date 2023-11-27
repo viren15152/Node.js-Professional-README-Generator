@@ -57,6 +57,10 @@ function generateMarkdown(data) {
   const licenseLink = renderLicenseLink(data.license);
   const licenseSection = renderLicenseSection(data.license)
 
+  const tableOfContents = data.tableOfContents
+    .map((section) => `* [${section}](#${section.toLowerCase().replace(/\s+/g, '-')})`)
+    .join('\n');
+
   return `# ${data.title}
 
 ${licenseBadge}
@@ -87,11 +91,14 @@ ${licenseSection}
 
 ## Questions
 
+${questionsSection}
+
 For questions, please contact me via:
 
 - Github: [${data.github}](https://github.com/${data.github})
 - Email: ${data.email}
 `;
+
 }
 
 module.exports = generateMarkdown;

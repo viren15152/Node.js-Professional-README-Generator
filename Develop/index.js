@@ -73,12 +73,6 @@ const questions = [
     name: 'email',
     message: 'What is your current email address?',
   },
-  {
-    type: 'input',
-    name: 'description',
-    message: 'Can you provide a brief description of your project and what it does?',
-
-  },
 ];
 
 // In this section I've created a function to write the README file. This function uses the 'fs.writeFile' medthod to write data to a file, It also logs an error to the console should there be any. 
