@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
     GPL: 'https://img.shields.io/badge/License-GPL%20v3-blue.svg',
   };
 
-  return `[License Badge](${licenseBadgeMap[license]})`;
+  return `![License Badge](${licenseBadgeMap[license]})`;
 }
 
 // I have created a function that returns the license link.
@@ -91,7 +91,7 @@ ${data.installation}
 
 ## Usage 
 
-${data.contributing}
+${data.usage}
 
 ${licenseSection}
 
