@@ -72,10 +72,12 @@ function generateMarkdown(data) {
     'Contact',
   ];
 
-  const questionsSection = Object.entries(data)
-    .filter(([key]) => key !== 'tableOfContents')
-    .map(([key, value]) => `* **${key}:** ${value}`)
-    .join('\n');
+  function renderContactSection(data) {
+    return `
+  For questions, please contact me via:
+  - Github: [${data.github}](https://github.com/${data.github})
+  - Email: ${data.email}`;
+}
 
   // Created a section for visuals if screenshotPath is provided
   const visualsSection = data.screenshotPath ? `## ${orderOfSections[1]}\n\n![Screenshot](${data.screenshotPath})` : '';
@@ -121,7 +123,7 @@ ${licenseSection}
 
 ## ${orderOfSections[7]}
 
-${questionsSection}
+${renderContactSection(data)}
 
 `;
 
