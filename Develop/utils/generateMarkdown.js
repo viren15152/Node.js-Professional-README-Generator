@@ -54,6 +54,7 @@ function renderLicenseSection(license) {
 }
 
 // I have created a function to generate markdown for README.
+
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseLink = renderLicenseLink(data.license);
@@ -77,7 +78,7 @@ function generateMarkdown(data) {
     .join('\n');
 
   // Created a section for visuals if screenshotPath is provided
-  const visualsSection = data.screenshotPath ? `## Visuals\n\n![Screenshot](${data.screenshotPath})` : '';
+  const visualsSection = data.screenshotPath ? `## ${orderOfSections[1]}\n\n![Screenshot](${data.screenshotPath})` : '';
 
   // This is a template literal, this section of my code is creating a string that includes content of data.title within an H1 heading in Markdown.
   return `# ${data.title}
@@ -96,46 +97,35 @@ ${orderOfSections
 
 ${data.description}
 
-## ${orderOfSections[1]}
-
 ${visualsSection}
 
 ## ${orderOfSections[2]}
 
-${questionsSection}
+${data.technologiesUsed}
 
 ## ${orderOfSections[3]}
 
-${data.technologiesUsed}
+${data.installation}
 
 ## ${orderOfSections[4]}
 
-${data.installation}
+${data.usage}
 
 ## ${orderOfSections[5]}
 
-${data.usage}
+${data.contributing}
 
 ## ${orderOfSections[6]}
 
-${data.contributing}
+${licenseSection}
 
 ## ${orderOfSections[7]}
 
-${licenseSection}
+${questionsSection}
 
-## Questions
-
-For questions, please contact me via:
-
-- Github: [${data.github}](https://github.com/${data.github})
-- Email: ${data.email}
 `;
 
 }
 
 module.exports = generateMarkdown;
-
-
-
 
