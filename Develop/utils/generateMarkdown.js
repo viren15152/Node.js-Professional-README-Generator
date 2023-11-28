@@ -1,3 +1,4 @@
+// This section includes packages needed for this application (require statement).
 const inquirer = require('inquirer');
 const fs = require('fs');
 
@@ -52,7 +53,6 @@ function renderLicenseSection(license) {
   return `## License\n\n${licenseTextMap[license]}`;
 }
 
-// I have created a function to generate markdown for README.
 // I have created a function to generate markdown for README.
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
@@ -135,6 +135,7 @@ For questions, please contact me via:
 }
 
 module.exports = generateMarkdown;
+
 
 
 
