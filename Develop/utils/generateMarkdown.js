@@ -55,11 +55,8 @@ function renderLicenseSection(license) {
 
 // I have created a function to generate markdown for README.
 
+// I have created a function to generate markdown for README.
 function generateMarkdown(data) {
-  const licenseBadge = renderLicenseBadge(data.license);
-  const licenseLink = renderLicenseLink(data.license);
-  const licenseSection = renderLicenseSection(data.license);
-
   // Define the order of sections in the table of contents
   const orderOfSections = [
     'Description',
@@ -77,16 +74,17 @@ function generateMarkdown(data) {
   For questions, please contact me via:
   - Github: [${data.github}](https://github.com/${data.github})
   - Email: ${data.email}`;
-}
+  }
 
   // Created a section for visuals if screenshotPath is provided
   const visualsSection = data.screenshotPath ? `## ${orderOfSections[1]}\n\n![Screenshot](${data.screenshotPath})` : '';
 
+  // Define license badge and link
+  const licenseBadge = renderLicenseBadge(data.license);
+  const licenseLink = renderLicenseLink(data.license);
+
   // This is a template literal, this section of my code is creating a string that includes content of data.title within an H1 heading in Markdown.
   return `# ${data.title}
-
-${licenseBadge}
-${licenseLink}
 
 ## Table of Contents
 
@@ -119,7 +117,9 @@ ${data.contributing}
 
 ## ${orderOfSections[6]}
 
-${licenseSection}
+${licenseBadge}
+${licenseLink}
+${renderLicenseSection(data.license)}
 
 ## ${orderOfSections[7]}
 
@@ -130,4 +130,3 @@ ${renderContactSection(data)}
 }
 
 module.exports = generateMarkdown;
-

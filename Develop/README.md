@@ -1,7 +1,4 @@
-# NODEjs PRG
-
-![License Badge](https://img.shields.io/badge/License-MIT-yellow.svg)
-[License Link](https://opensource.org/licenses/MIT)
+# Node.js PRG
 
 ## Table of Contents
 
@@ -16,30 +13,32 @@
 
 ## Description
 
-cli app that produces readme
+ABC
 
 ## Visuals
 
-[Screenshot](![Screenshot](Screenshot 2023-11-28 at 01.42.24))
+![Screenshot](Screenshot 2023-11-28 at 01.42.24)
 
 ## Technologies Used
 
-NODE.JS,JAVASCRIPT VS CODE & GITHUB
+node.js Javascript
 
 ## Installation
 
-CLONE REPO AND RUN IN CLI
+clone git hub repo
 
 ## Usage
 
-RUN INDEX.JS AND ANSWER THE QUESTIONS IN THE CLI
+open in CLI and run
 
 ## Contributing
 
-Pull Requests are welcome
+pull request
 
 ## License
 
+![License Badge](https://img.shields.io/badge/License-MIT-yellow.svg)
+[License Link](https://opensource.org/licenses/MIT)
 ## License
 
 This project is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.
