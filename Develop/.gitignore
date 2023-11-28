@@ -1,1 +1,8 @@
 node_modules
+# .gitignore
+
+# Exclude node_modules directory (existing entry)
+node_modules/
+
+# Exclude .DS_Store files
+.DS_Store

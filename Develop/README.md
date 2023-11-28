@@ -20,7 +20,7 @@ cli app that produces readme
 
 ## Visuals
 
-![Screenshot](![Screenshot](Screenshot 2023-11-28 at 01.42.24))
+[Screenshot](![Screenshot](Screenshot 2023-11-28 at 01.42.24))
 
 ## Technologies Used
 
