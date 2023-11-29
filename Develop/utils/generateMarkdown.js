@@ -130,3 +130,5 @@ ${renderContactSection(data)}
 }
 
 module.exports = generateMarkdown;
+
+//module. exports is part of the CommonJS specification – it defines the object that is created when a file is imported using require() . This gives developers control over which parts of a file can be accessed externally, allowing for encapsulation.
