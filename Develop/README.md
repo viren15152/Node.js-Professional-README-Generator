@@ -17,8 +17,9 @@ A command-line/terminal application that dynamically generates a professional RE
 
 ## Visuals
 
-![Screenshot of application functioning](<Screenshot 2023-11-28 at 01.42.24.png>)
-![Screenshot of README.md that is generated](<Screenshot 2023-11-29 at 21.53.31.png>)
+![Screenshot of application functioning in the CLI](<Screenshot 2023-11-28 at 01.42.24.png>)
+
+![Screenshot of README.md that is generated in VS code](<Screenshot 2023-11-29 at 21.53.31.png>)
 
 [Video of Application functioning] https://drive.google.com/file/d/158vG9xq4CaBEXDOf_dDROKif6eEcNFcX/view
 
