@@ -18,7 +18,7 @@ A command-line/terminal application that dynamically generates a professional RE
 ## Visuals
 
 ![Screenshot of application functioning](<Screenshot 2023-11-28 at 01.42.24.png>)
-
+![Screenshot of README.md that is generated](<Screenshot 2023-11-29 at 21.53.31.png>)
 ## Technologies Used
 
 Node.js, Inquirer 8.2.4 & JavaScript 
