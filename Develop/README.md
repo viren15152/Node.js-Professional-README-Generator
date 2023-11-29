@@ -17,7 +17,7 @@ A command-line/terminal application that dynamically generates a professional RE
 
 ## Visuals
 
-[Screenshot](Screenshot 2023-11-28 at 01.42.24)
+![Screenshot of application functioning](<Screenshot 2023-11-28 at 01.42.24.png>)
 
 ## Technologies Used
 
