@@ -68,7 +68,7 @@ function generateMarkdown(data) {
     'License',
     'Contact',
   ];
-
+// This section will render my contact section of the README.md 
   function renderContactSection(data) {
     return `
   For questions, please contact me via:
@@ -131,4 +131,4 @@ ${renderContactSection(data)}
 
 module.exports = generateMarkdown;
 
-//module. exports is part of the CommonJS specification – it defines the object that is created when a file is imported using require() . This gives developers control over which parts of a file can be accessed externally, allowing for encapsulation.
+//module. exports is part of the CommonJS specification it defines the object that is created when a file is imported using require() . This gives developers control over which parts of a file can be accessed externally, allowing for encapsulation.
